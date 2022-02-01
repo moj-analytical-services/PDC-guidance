@@ -3,6 +3,7 @@ title: "Accessible Spreadsheets"
 author: "MoJ Presentation and Dissemination Group"
 date: "`r Sys.Date()`"
 description: This is an instructional document to show MoJ statisticians how to produce accessible spreadsheets
+output-dir: "docs"
 link-citations: yes
 biblio-style: apalike
 site: bookdown::bookdown_site
