@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="3.1 Create an unformatted raw data table | Accessible Spreadsheets" />
+<meta property="og:type" content="book" />
+
+
+<meta property="og:description" content="This is an instructional document to show MoJ statisticians how to produce accessible spreadsheets" />
+
+
+<meta name="author" content="MoJ Presentation and Dissemination Group" />
+
+<meta name="date" content="2022-01-31" />
+
+
+<meta name="description" content="This is an instructional document to show MoJ statisticians how to produce accessible spreadsheets">
+
+<title>3.1 Create an unformatted raw data table | Accessible Spreadsheets</title>
+
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if boostrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#introduction"><span class="toc-section-number">1</span> Introduction</a></li>
+<li><a href="2-why-we-need-to-produce-accessible-spreadsheets.html#why-we-need-to-produce-accessible-spreadsheets"><span class="toc-section-number">2</span> Why we need to produce accessible spreadsheets</a></li>
+<li><a href="3-methods.html#methods"><span class="toc-section-number">3</span> Methods</a>
+<ul>
+<li><a href="3-1-create-an-unformatted-raw-data-table.html#create-an-unformatted-raw-data-table"><span class="toc-section-number">3.1</span> Create an unformatted raw data table</a>
+<ul>
+<li><a href="3-1-create-an-unformatted-raw-data-table.html#steps-for-creating-this-format-of-spreadsheet"><span class="toc-section-number">3.1.1</span> Steps for creating this format of spreadsheet</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="create-an-unformatted-raw-data-table" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Create an unformatted raw data table</h2>
+<p>This option involves creating an unformatted raw data output. By this we mean rows of data with column headings. Once created, there are minor changes required to make the spreadsheet accessible.</p>
+<p><strong>Reasons for choosing this option:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>If your data tables are already produced via tools such as R or Python, this option may involve less work than reformatting existing statistical release tables (option 2) as it largely involves exporting a dataset to an external file.</p></li>
+<li><p>As part of the GSS Open Data strategy and the Data and Analysis Dissemination Strategy, we are also likely to be moving towards releasing more data as unformatted data tables in future, and so this method will transfer more easily to that model.</p></li>
+</ol>
+<div id="steps-for-creating-this-format-of-spreadsheet" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Steps for creating this format of spreadsheet</h3>
+<ol style="list-style-type: decimal">
+<li><p>The starting point for this option is to output the data that makes the final table unformatted. This will usually involve saving an R data frame or SAS data set directly to Excel or as a CSV which is then copied into Excel.</p></li>
+<li><p>Ensure cell <strong>A1</strong> is formatted as the heading for the sheet. This is because screen readers start from cell A1. To do this choose the <strong>Heading 1</strong> option from the style section.</p></li>
+</ol>
+<pre><code>Home &gt; Cell style &gt; Heading 1</code></pre>
+<p>The heading will automatically format to a standard Excel format. Following this, remove the border, re-format the font and convert the colour of the text to the automatic colour. GSS recommends using the automatic colour, as opposed to black, as some users have specific settings which will change automatically to meet their needs.</p>
+
+</div>
+</div>
+<!-- </div> -->
+<p style="text-align: center;">
+<a href="3-methods.html"><button class="btn btn-default">Previous</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>
