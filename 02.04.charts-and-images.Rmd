@@ -1,0 +1,9 @@
+### Charts and images
+
+The gov.uk publishing platform’s charting functionality is only applicable for very basic bar charts and therefore most MoJ charts will need to be uploaded as images. On Whitehall publisher, meaningful Alt Text should be added to each image in accordance with accessibility guidelines.  
+
+Each image must have the exact dimensions: **960px x 640px**.  
+
+Each image must be uploaded the ‘document’ tab when uploading the publication and **must be uploaded in the order that they appear in the report**. 
+
+Reference your image where you want it to appear on the webpage, using the markdown text !!n, where ‘n’ is the number of the image.  

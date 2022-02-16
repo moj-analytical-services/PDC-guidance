@@ -1,0 +1,76 @@
+## Creating markdown content. Manual process  
+
+The markdown text is input into the ‘Body’ section. It can be created in two ways – depending on whether your report is created manually in Word or through RAP. If entered manually you will need to be familiar with some commonly used HTML formatting tags.
+
+### Commonly used markdown tags   
+
+Manually creating a HTML version of a statistical report involves adding Markdown tags, to add formatting effects, to plain text. A guide on gov.uk specific Markdown tags can be found here: https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown. 
+
+
+
+**Headings** 
+
+Do not use a single # heading in your body text as these are used for titles only
+Use headings in sequence.  
+A ### heading should only be used after using a ## heading. 
+
+\## First-level heading   
+\### Second level heading   
+
+
+**Bold text**
+
+\*\*bold text\*\*   
+will display **bold text**
+
+ 
+**Links** 
+
+Place square brackets [ ] around the link text you wish to display and round brackets ( ) around the actual URL.
+
+For instance, \[how to publish on gov.uk/markdown] (https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown) displays as [how to publish on gov.uk/markdown](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown)
+
+If you wish to display the full URL as the link simply place the URL in sets of brackets.
+
+**Addresses** 
+
+$A  
+Address line 1  
+Address line 2   
+$A  
+
+**Email address** 
+
+Place an email address between < > to mark as email link
+
+\<emailaddress@justice.gov.uk> will be shown as
+
+<emailaddress@justice.gov.uk> 
+
+**Call-out boxes** 
+
+$CTA  
+‘Insert text here’  
+$CTA  
+
+**Bullet points**
+
+Use a single asterix before each item as below .
+Replacing the asterix with 1. (including the full-stop) will produce a numbered list instead
+
+\* item 1  
+\* item 2  
+\* item 3  
+
+To create a bulleted list like this
+
+* item 1  
+* item 2  
+* item 3  
+
+**Horizontal rules** 
+
+To create a horizontal rule as diplayed below, use three or more dashes (---), asterisks (***), or underscores (___) on a line by themselves.  
+
+---
+

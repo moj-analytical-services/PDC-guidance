@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Further links | Accessible Spreadsheets</title>
+  <title>6 HTML publishing guidance | Accessible Spreadsheets</title>
   <meta name="description" content="This is an instructional document to show MoJ statisticians how to produce accessible spreadsheets" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Further links | Accessible Spreadsheets" />
+  <meta property="og:title" content="6 HTML publishing guidance | Accessible Spreadsheets" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Further links | Accessible Spreadsheets" />
+  <meta name="twitter:title" content="6 HTML publishing guidance | Accessible Spreadsheets" />
   
   <meta name="twitter:description" content="This is an instructional document to show MoJ statisticians how to produce accessible spreadsheets" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="what-does-this-guidance-cover.html"/>
-<link rel="next" href="any-questions.html"/>
+<link rel="prev" href="any-questions.html"/>
+
 <script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -114,19 +114,99 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="links" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Further links</h1>
-<p><a href="https://gss.civilservice.gov.uk/policy-store/making-analytical-publications-accessible/#section-12">Making analytical publications accessible – GSS</a></p>
-<p><a href="https://gss.civilservice.gov.uk/policy-store/making-spreadsheets-accessible-a-brief-checklist-of-the-basics/">Making spreadsheets accessible: a checklist of the basics – GSS</a></p>
-<p><a href="https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/">Releasing statistics in spreadsheets – GSS</a></p>
+<div id="html-publishing-guidance" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> HTML publishing guidance</h1>
+<div id="intoduction" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Intoduction</h2>
+<p>This document provides guidance on the processes of producing a HTML statistical report.</p>
+<p>In order to comply with accessibility requirements, alongside other benefits, statistical reports within the Ministry of Justice(MoJ) need to be published in HTML format. HTML output is produced through the Whitehall government publishing platform.</p>
+</div>
+<div id="whitehall-publishing-training" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Whitehall publishing training</h2>
+<p>Access to the Whitehall platform requires the completion of two online training courses. These should take more than 2 half days to complete.</p>
+<p>Each statistical team should have at least one person with access to Whitehall publisher. If you would like to sign yourself or a member of your team up to the training, please contact, <a href="mailto:sacha.ciolino@justice.gov.uk" class="email">sacha.ciolino@justice.gov.uk</a>, from the web team. On completion of this training, you are given access to two publishing environments – Integration and Production.</p>
+<p>Integration is used to practice or test content while Production is used to publish live to GOV.UK.</p>
+<p>More information on this can be found on this website: <a href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/introduction-and-access-to-whitehall-publisher">https://www.gov.uk/guidance/how-to-publish-on-gov-uk/introduction-and-access-to-whitehall-publisher</a></p>
+
+</div>
+<div id="how-to-create-a-html-attachment-on-whitehall" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> How to create a HTML attachment on Whitehall</h2>
+<p>An example of a HTML statistical report (Offender Management Statistics Quarterly) can be seen <a href="https://www.gov.uk/government/statistics/offender-management-statistics-quarterly-july-to-september-2021">here</a></p>
+<p><strong>Step 1</strong>: Within the ‘Statistics announcements’ tab, find and click on the relevant publication</p>
+<div class="figure">
+<img src="assets/create-html-attachment-1.jpeg" alt="" />
+<p class="caption">Image of selecting publication title from pre-release announcement list on Whitehall publisher</p>
+</div>
+
+</div>
+<div id="creating-markdown-content.-manual-process" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Creating markdown content. Manual process</h2>
+<p>The markdown text is input into the ‘Body’ section. It can be created in two ways – depending on whether your report is created manually in Word or through RAP. If entered manually you will need to be familiar with some commonly used HTML formatting tags.</p>
+<div id="commonly-used-markdown-tags" class="section level3" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Commonly used markdown tags</h3>
+<p>Manually creating a HTML version of a statistical report involves adding Markdown tags, to add formatting effects, to plain text. A guide on gov.uk specific Markdown tags can be found here: <a href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown" class="uri">https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown</a>.</p>
+<p><strong>Headings</strong></p>
+<p>Do not use a single # heading in your body text as these are used for titles only
+Use headings in sequence.<br />
+A ### heading should only be used after using a ## heading.</p>
+<p>## First-level heading<br />
+### Second level heading</p>
+<p><strong>Bold text</strong></p>
+<p>**bold text**<br />
+will display <strong>bold text</strong></p>
+<p><strong>Links</strong></p>
+<p>Place square brackets [ ] around the link text you wish to display and round brackets ( ) around the actual URL.</p>
+<p>For instance, [how to publish on gov.uk/markdown] (<a href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown" class="uri">https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown</a>) displays as <a href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown">how to publish on gov.uk/markdown</a></p>
+<p>If you wish to display the full URL as the link simply place the URL in sets of brackets.</p>
+<p><strong>Addresses</strong></p>
+<p>$A<br />
+Address line 1<br />
+Address line 2<br />
+$A</p>
+<p><strong>Email address</strong></p>
+<p>Place an email address between &lt; &gt; to mark as email link</p>
+<p>&lt;<a href="mailto:emailaddress@justice.gov.uk" class="email">emailaddress@justice.gov.uk</a>&gt; will be shown as</p>
+<p><a href="mailto:emailaddress@justice.gov.uk" class="email">emailaddress@justice.gov.uk</a></p>
+<p><strong>Call-out boxes</strong></p>
+<p>$CTA<br />
+‘Insert text here’<br />
+$CTA</p>
+<p><strong>Bullet points</strong></p>
+<p>Use a single asterix before each item as below .
+Replacing the asterix with 1. (including the full-stop) will produce a numbered list instead</p>
+<p>* item 1<br />
+* item 2<br />
+* item 3</p>
+<p>To create a bulleted list like this</p>
+<ul>
+<li>item 1<br />
+</li>
+<li>item 2<br />
+</li>
+<li>item 3</li>
+</ul>
+<p><strong>Horizontal rules</strong></p>
+<p>To create a horizontal rule as diplayed below, use three or more dashes (—), asterisks (***), or underscores (___) on a line by themselves.</p>
+<hr />
+
+</div>
+<div id="charts-and-images" class="section level3" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> Charts and images</h3>
+<p>The gov.uk publishing platform’s charting functionality is only applicable for very basic bar charts and therefore most MoJ charts will need to be uploaded as images. On Whitehall publisher, meaningful Alt Text should be added to each image in accordance with accessibility guidelines.</p>
+<p>Each image must have the exact dimensions: <strong>960px x 640px</strong>.</p>
+<p>Each image must be uploaded the ‘document’ tab when uploading the publication and <strong>must be uploaded in the order that they appear in the report</strong>.</p>
+<p>Reference your image where you want it to appear on the webpage, using the markdown text !!n, where ‘n’ is the number of the image.</p>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="what-does-this-guidance-cover.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="any-questions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="any-questions.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

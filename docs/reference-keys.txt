@@ -8,3 +8,10 @@ essential-changes
 nice-to-have-changes-but-not-essential
 links
 any-questions
+html-publishing-guidance
+intoduction
+whitehall-publishing-training
+how-to-create-a-html-attachment-on-whitehall
+creating-markdown-content.-manual-process
+commonly-used-markdown-tags
+charts-and-images

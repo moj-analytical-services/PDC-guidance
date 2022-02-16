@@ -1,0 +1,17 @@
+# HTML publishing guidance
+
+## Intoduction
+
+This document provides guidance on the processes of producing a HTML statistical report. 
+
+In order to comply with accessibility requirements, alongside other benefits, statistical reports within the Ministry of Justice(MoJ) need to be published in HTML format. HTML output is produced through the Whitehall government publishing platform. 
+
+## Whitehall publishing training
+
+Access to the Whitehall platform requires the completion of two online training courses. These should take more than 2 half days to complete.
+
+Each statistical team should have at least one person with access to Whitehall publisher. If you would like to sign yourself or a member of your team up to the training, please contact, <sacha.ciolino@justice.gov.uk>, from the web team. On completion of this training, you are given access to two publishing environments – Integration and Production. 
+
+Integration is used to practice or test content while Production is used to publish live to GOV.UK. 
+
+More information on this can be found on this website: [https://www.gov.uk/guidance/how-to-publish-on-gov-uk/introduction-and-access-to-whitehall-publisher](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/introduction-and-access-to-whitehall-publisher) 
