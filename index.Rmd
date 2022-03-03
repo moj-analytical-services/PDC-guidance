@@ -15,11 +15,14 @@ output:
 
 # Introduction
 
-This document provides a checklist for converting statistical release spreadsheets into an accessible format.
+Accessibility is an important consideration in the creation of spreadsheets, such as those which contain data tables to accompany statistical publications. Since 2020 it has been a requirement for all information published online by public sector bodies to comply with accessibility regulations.
 
-The GSS have created detailed [guidance](#links) for creating accessible spreadsheets.
+This guidance aims to help statistics producers to get started on making their publications accessible as quickly and easily as possible. It should be read in conjunction with the more comprehensive GSS Guidance below:
 
-This document aims to summarise the guidance into a simple check list. 
+[Releasing statistics in spreadsheets – GSS](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/)
+
+[Making spreadsheets accessible: a checklist of the basics – GSS](https://gss.civilservice.gov.uk/policy-store/making-spreadsheets-accessible-a-brief-checklist-of-the-basics/)
+
 
 # Why we need to produce accessible spreadsheets
 
@@ -35,59 +38,50 @@ The GSS Best Practice and Impact Division team have [outlined three reasons](htt
 
 3.	[The Equality Act 2010](https://www.legislation.gov.uk/ukpga/2010/15/contents) (or the [Disability Discrimination Act 1995](https://www.legislation.gov.uk/ukpga/1995/50/contents) in Northern Ireland) states that all UK service providers must consider ‘reasonable adjustments’ for disabled people.
 
-# What does this guidance cover?
 
-This guidance covers how to make MOJ statistical release spreadsheets accessible.  
+# Options for creating accessible spreadsheets
 
-Two options have been outlined below for creating accessible spreadsheets:
+GSS guidance includes [a demonstration of how to make a spreadsheet accessible](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/#section-5)
 
-1. Create an unformatted raw data output
+The guidance produced here aims to provide a step-by-step guide of the most essential stages in this process to help producers get started. Note that this guidance does not cover every stage in making a spreadsheet accessible. These are covered in full in the GSS Guidance.
 
-2. Reformat existing statistical release tables
- 
-##  Create an unformatted raw data table
+Producers should also note that it is the final output that is important for meeting accessibility regulations. How this is achieved is up to producers. In addition to following the GSS demonstration, we have presented two options for how to do this here.
 
-This option involves creating an unformatted raw data output.  By this we mean rows of data with column headings. Once created, there are minor changes required to make the spreadsheet accessible.  
 
-**Reasons for choosing this option:**
+## Use an R package to output a series of R data frames as an accesible spreadsheet
 
-- If your data tables are already produced via tools such as R or Python, this option may involve less work than reformatting existing statistical release tables (option 2) as it largely involves exporting a dataset to an external file.
+If your tables are currently produced in R, this may be the easiest solution.
 
-- As part of the GSS Open Data strategy and the Data and Analysis Dissemination Strategy, we are also likely to be moving towards releasing more data as unformatted data tables in future, and so this method will transfer more easily to that model.
 
-### How to produce unformatted raw data table
+### Available packages
 
-1.	The starting point for this option is to output the data that makes the final table unformatted. This will usually involve saving an R data frame or SAS data set directly to Excel or as a CSV which is then copied into Excel. 
+It is strongly recommended that you use the R Package [a11ytables](https://github.com/co-analysis/a11ytables). Additional information can be found on the [a11ytables website](https://co-analysis.github.io/a11ytables/).
 
-2.	Ensure cell A1 is formatted as the heading for the sheet.  This is because screen readers start from cell A1.  To do this choose the ‘heading 1’ option from the style section.
-Home > Cell style > Heading 1
+The [mojtable](https://github.com/moj-analytical-services/mojtable) package is also available. This allows slightly more customisation of the output. However, it requires all worksheets to be built from scratch in R, rather than the set layout created by a11ytables.
 
-![Image of where to find the heading selection in Excel](assets/Heading.png)
- 
-The heading will automatically format to a standard Excel format.  Following this, remove the border, re-format the font and convert the colour of the text to the automatic colour.  GSS recommends using the automatic colour, as opposed to black, as some users have specific settings which will change automatically to meet their needs.
-Font > automatic
+Both packages use a very similar approach to rendering tables into accessible output and it should be relatively straightforward to transfer code between them.
 
-![Image of where to find the font colour in Excel](assets/Font-colour.png)
- 
-3.	Name the table.   This is required as a screen reader can identify where the table is, such as where the column headers are and where the table ends.  To name a table, select all the cells in the table, then go to insert option and then select table. 
-Insert > Table
+Other packages are available. If you find an alternative that you think works better, please e-mail [GSS_PDC@justice.gov.uk](mailto:GSS_PDC@justice.gov.uk).
 
-![Image of where to find the insert table option in Excel](assets/Insert-table.png)
- 
-Once the table is created, Excel will automatically re-format the colours and add filters to the top.  Remove the colours and filters from the table.  You can do this by going to using the table style options, as outlined below.
-Design > Table Style options > untick everything except ‘Header Row’.
+### Details
 
-If you need to adjust the table afterwards go to Design > Resize tables
+Both packages require you to build the overall structure of your tables as an R data frame. This reuires a very simple table layout as tables must be laid out as a grid with a single header row.
 
-If you press F5 you can see the tables that have been named.
+If choosing this option it may be easier, rather than trying to re-create the structure of existing tables, to simply export the data that underlies the table in tidy data format. This will have the dual benefit of meeting accessibility requirements and also aiding the machine-readability of your tables.
 
-## Reformat existing statistical release tables
+Instructions on how to use these packages are available in the respective GitHub README files.
 
-This option involves re-formatting the existing statistical release spreadsheet.  This option is more manual and will probably take longer to do than option one. However, the formatting will be similar to the current output.   The GSS have confirmed if option one is carried out, then there is no need to also do option two.
 
-An example can be seen within the [HMPPS workforce spreadsheet](https://justiceuk-my.sharepoint.com/:x:/g/personal/christopher_casanovas_justice_gov_uk/ESTlUuMQMcFEoqb9d6QnPH0Bo7v5qNpHgqZvN-6DhWeE6Q).
+## Manually reformat existing tables
 
-This section has been split into essential changes, and those which are nice to have.
+If you don't currently output tables from R, or your tables can't be produced as an R data frame, you may need to manually reformat your tables. This will likely take longer than the option above, but allows for more flexibility in the structure of output.
+
+
+GSS guidance includes [a full demonstration of how to manually reformat tables to make a spreadsheet accessible](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/#section-5). 
+
+Below are the main steps that you need to take to cover the majority of accessibility requirements to start with. Over time, you will want to go beyond this to follow the full GSS guidance.
+
+This section has been split into essential changes, and additional points to consider.
 
 ### Essential changes:
 
@@ -123,7 +117,7 @@ If you need to adjust the table afterwards go to Design > Resize tables
 
 6.	Ensure correct use of colour.  Colours used should not be the only way a trend is shown.  For example, using red to show negative numbers (without any minus sign).  If colours are used to highlight a trend, the user should also be able to identify the trend without the use of colour.  For example, for negative numbers have a minus sign as well as the red colour.  
 
-### Nice to have changes, but not essential:
+### Additional considerations
 
 The following steps are not required to be compliant with accessibility regulations but are recommended as best practice. 
 

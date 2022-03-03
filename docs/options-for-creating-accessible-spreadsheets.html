@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Options for creating accessible spreadsheets | Accessible Spreadsheets</title>
+  <meta name="description" content="This is an instructional document to show MoJ statisticians how to produce accessible spreadsheets" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Options for creating accessible spreadsheets | Accessible Spreadsheets" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is an instructional document to show MoJ statisticians how to produce accessible spreadsheets" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Options for creating accessible spreadsheets | Accessible Spreadsheets" />
+  
+  <meta name="twitter:description" content="This is an instructional document to show MoJ statisticians how to produce accessible spreadsheets" />
+  
+
+<meta name="author" content="MoJ Presentation and Dissemination Group" />
+
+
+<meta name="date" content="2022-03-03" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="why-we-need-to-produce-accessible-spreadsheets.html"/>
+<link rel="next" href="links.html"/>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="why-we-need-to-produce-accessible-spreadsheets.html"><a href="why-we-need-to-produce-accessible-spreadsheets.html"><i class="fa fa-check"></i><b>2</b> Why we need to produce accessible spreadsheets</a></li>
+<li class="chapter" data-level="3" data-path="options-for-creating-accessible-spreadsheets.html"><a href="options-for-creating-accessible-spreadsheets.html"><i class="fa fa-check"></i><b>3</b> Options for creating accessible spreadsheets</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="options-for-creating-accessible-spreadsheets.html"><a href="options-for-creating-accessible-spreadsheets.html#use-an-r-package-to-output-a-series-of-r-data-frames-as-an-accesible-spreadsheet"><i class="fa fa-check"></i><b>3.1</b> Use an R package to output a series of R data frames as an accesible spreadsheet</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="options-for-creating-accessible-spreadsheets.html"><a href="options-for-creating-accessible-spreadsheets.html#available-packages"><i class="fa fa-check"></i><b>3.1.1</b> Available packages</a></li>
+<li class="chapter" data-level="3.1.2" data-path="options-for-creating-accessible-spreadsheets.html"><a href="options-for-creating-accessible-spreadsheets.html#details"><i class="fa fa-check"></i><b>3.1.2</b> Details</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="options-for-creating-accessible-spreadsheets.html"><a href="options-for-creating-accessible-spreadsheets.html#manually-reformat-existing-tables"><i class="fa fa-check"></i><b>3.2</b> Manually reformat existing tables</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="options-for-creating-accessible-spreadsheets.html"><a href="options-for-creating-accessible-spreadsheets.html#essential-changes"><i class="fa fa-check"></i><b>3.2.1</b> Essential changes:</a></li>
+<li class="chapter" data-level="3.2.2" data-path="options-for-creating-accessible-spreadsheets.html"><a href="options-for-creating-accessible-spreadsheets.html#additional-considerations"><i class="fa fa-check"></i><b>3.2.2</b> Additional considerations</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="links.html"><a href="links.html"><i class="fa fa-check"></i><b>4</b> Further links</a></li>
+<li class="chapter" data-level="5" data-path="any-questions.html"><a href="any-questions.html"><i class="fa fa-check"></i><b>5</b> Any questions?</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Accessible Spreadsheets</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="options-for-creating-accessible-spreadsheets" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Options for creating accessible spreadsheets</h1>
+<p>GSS guidance includes <a href="https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/#section-5">a demonstration of how to make a spreadsheet accessible</a></p>
+<p>The guidance produced here aims to provide a step-by-step guide of the most essential stages in this process to help producers get started. Note that this guidance does not cover every stage in making a spreadsheet accessible. These are covered in full in the GSS Guidance.</p>
+<p>Producers should also note that it is the final output that is important for meeting accessibility regulations. How this is achieved is up to producers. In addition to following the GSS demonstration, we have presented two options for how to do this here.</p>
+<div id="use-an-r-package-to-output-a-series-of-r-data-frames-as-an-accesible-spreadsheet" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Use an R package to output a series of R data frames as an accesible spreadsheet</h2>
+<p>If your tables are currently produced in R, this may be the easiest solution.</p>
+<div id="available-packages" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Available packages</h3>
+<p>It is strongly recommended that you use the R Package <a href="https://github.com/co-analysis/a11ytables">a11ytables</a>. Additional information can be found on the <a href="https://co-analysis.github.io/a11ytables/">a11ytables website</a>.</p>
+<p>The <a href="https://github.com/moj-analytical-services/mojtable">mojtable</a> package is also available. This allows slightly more customisation of the output. However, it requires all worksheets to be built from scratch in R, rather than the set layout created by a11ytables.</p>
+<p>Both packages use a very similar approach to rendering tables into accessible output and it should be relatively straightforward to transfer code between them.</p>
+<p>Other packages are available. If you find an alternative that you think works better, please e-mail <a href="mailto:GSS_PDC@justice.gov.uk">GSS_PDC@justice.gov.uk</a>.</p>
+</div>
+<div id="details" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Details</h3>
+<p>Both packages require you to build the overall structure of your tables as an R data frame. This reuires a very simple table layout as tables must be laid out as a grid with a single header row.</p>
+<p>If choosing this option it may be easier, rather than trying to re-create the structure of existing tables, to simply export the data that underlies the table in tidy data format. This will have the dual benefit of meeting accessibility requirements and also aiding the machine-readability of your tables.</p>
+<p>Instructions on how to use these packages are available in the respective GitHub README files.</p>
+</div>
+</div>
+<div id="manually-reformat-existing-tables" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Manually reformat existing tables</h2>
+<p>If you don’t currently output tables from R, or your tables can’t be produced as an R data frame, you may need to manually reformat your tables. This will likely take longer than the option above, but allows for more flexibility in the structure of output.</p>
+<p>GSS guidance includes <a href="https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/#section-5">a full demonstration of how to manually reformat tables to make a spreadsheet accessible</a>.</p>
+<p>Below are the main steps that you need to take to cover the majority of accessibility requirements to start with. Over time, you will want to go beyond this to follow the full GSS guidance.</p>
+<p>This section has been split into essential changes, and additional points to consider.</p>
+<div id="essential-changes" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Essential changes:</h3>
+<ol style="list-style-type: decimal">
+<li>Ensure cell A1 is the table heading for the sheet. This is because screen readers start from cell A1. To do this choose the ‘heading 1’ option from the style section.
+Home &gt; Cell style &gt; Heading</li>
+</ol>
+<div class="figure">
+<img src="assets/Heading.png" alt="" />
+<p class="caption">Image of where to find the heading selection in Excel</p>
+</div>
+<p>The heading will automatically format to a standard Excel format. Following this, remove the border, re-format the font and convert the colour of the text to the automatic colour. GSS recommends using the automatic colour, as opposed to black, as some users have specific settings which will change automatically to meet their needs.
+Font &gt; automatic</p>
+<div class="figure">
+<img src="assets/Font-colour.png" alt="" />
+<p class="caption">Image of where to find the font colour in Excel</p>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>Remove superscript within table heading. Screen readers cannot read out superscript, and they can be difficult to see. The GSS recommends adding square brackets to the end of the title and putting the note number(s) within the square brackets. Please see below for an example:</li>
+</ol>
+<p>Table 1: HMPPS staff in post (full time equivalent), by HQ and Area Services, Youth Custody Service, Prison Service structure and Probation Service region, England and Wales, 2016 to 2021 [note 1,2,3]</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Remove merged cells. Merged cells must be removed since screen readers cannot understand merged cells. Adjust the row height if required to fit in the text.</p></li>
+<li><p>Name the table. This is required as a screen reader can identify where the table is, such as where the column headers are and where the table ends. To name a table, select all the cells in the table, then go to insert option and then select table.
+Insert &gt; Table</p></li>
+</ol>
+<div class="figure">
+<img src="assets/Insert-table.png" alt="" />
+<p class="caption">Image of where to find the insert table option in Excel</p>
+</div>
+<p>Once the table is created, Excel will automatically re-format the colours and add filters to the top. Remove the colours and filters from the table. You can do this by going to using the table style options, as outlined below.
+Design &gt; Table Style options &gt; untick everything except ‘Header Row’.
+If you need to adjust the table afterwards go to Design &gt; Resize tables</p>
+<ol start="5" style="list-style-type: decimal">
+<li>The colour contrast between the font and background used must be at least WCAG AA compliant. <a href="https://webaim.org/resources/contrastchecker/">This contrast checker</a> can be used to check if the colours used are compliant. Insert your foreground and background colours into the website, and it will tell you if the contrast fails or passes.</li>
+</ol>
+<div class="figure">
+<img src="assets/Contrast-check.png" alt="" />
+<p class="caption">Image of the colour contrast checker</p>
+</div>
+<ol start="6" style="list-style-type: decimal">
+<li>Ensure correct use of colour. Colours used should not be the only way a trend is shown. For example, using red to show negative numbers (without any minus sign). If colours are used to highlight a trend, the user should also be able to identify the trend without the use of colour. For example, for negative numbers have a minus sign as well as the red colour.</li>
+</ol>
+</div>
+<div id="additional-considerations" class="section level3" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Additional considerations</h3>
+<p>The following steps are not required to be compliant with accessibility regulations but are recommended as best practice.</p>
+<ol start="7" style="list-style-type: decimal">
+<li><p>Review how borders are used. Using borders does not fail accessibility regulations. However, if they are overused they can make visualising the table difficult. An alternative is to increase the row height to create white space between rows and columns.</p></li>
+<li><p>Ensure correct alignment of cells. Row labels are left aligned and data are right aligned.</p></li>
+<li><p>Review how notes are shown. The GSS recommends adding notes and footnotes onto a single worksheet, rather than at the bottom of a table. The rationale for this are notes are more likely to be read, rather than at the end of a long table. The GSS also suggest adding an extra notes row or column within the table to highlight where notes are relevant, rather than a symbol or footnote.</p></li>
+<li><p>Cell A2 description. The GSS recommends adding a description of what is contained within the sheet below the title.<br />
+E.g. This worksheet contains two tables. One on HMPPS staff joiners and one on HMPPS staff leavers.</p></li>
+</ol>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="why-we-need-to-produce-accessible-spreadsheets.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="links.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

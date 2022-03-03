@@ -1,10 +1,11 @@
 introduction
 why-we-need-to-produce-accessible-spreadsheets
-what-does-this-guidance-cover
-create-an-unformatted-raw-data-table
-how-to-produce-unformatted-raw-data-table
-reformat-existing-statistical-release-tables
+options-for-creating-accessible-spreadsheets
+use-an-r-package-to-output-a-series-of-r-data-frames-as-an-accesible-spreadsheet
+available-packages
+details
+manually-reformat-existing-tables
 essential-changes
-nice-to-have-changes-but-not-essential
+additional-considerations
 links
 any-questions
