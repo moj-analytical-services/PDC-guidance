@@ -43,14 +43,14 @@ The GSS Best Practice and Impact Division team have [outlined three reasons](htt
 
 GSS guidance includes [a demonstration of how to make a spreadsheet accessible](https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/#section-5)
 
-The guidance produced here aims to provide a step-by-step guide of the most essential stages in this process to help producers get started. Note that this guidance does not cover every stage in making a spreadsheet accessible. These are covered in full in the GSS Guidance.
+The guidance produced here aims to provide a guide on how to make the most essential changes in this process to help producers get started. Note that this guidance does not cover every stage in making a spreadsheet accessible. These are covered in full in the GSS Guidance.
 
-Producers should also note that it is the final output that is important for meeting accessibility regulations. How this is achieved is up to producers. In addition to following the GSS demonstration, we have presented two options for how to do this here.
+The preferred option is that producers make their changes as part of an existing or in-development RAP process using the recommended R Package. Tables that are not currently produced via R and have no plans to do so in the short term will have to make manual changes.
 
 
 ## Use an R package to output a series of R data frames as an accesible spreadsheet
 
-If your tables are currently produced in R, this may be the easiest solution.
+If your tables are currently produced in R, this is the easiest solution.
 
 
 ### Available packages
@@ -61,11 +61,11 @@ The [mojtable](https://github.com/moj-analytical-services/mojtable) package is a
 
 Both packages use a very similar approach to rendering tables into accessible output and it should be relatively straightforward to transfer code between them.
 
-Other packages are available. If you find an alternative that you think works better, please e-mail [GSS_PDC@justice.gov.uk](mailto:GSS_PDC@justice.gov.uk).
+Other packages may be available. If you find an alternative that you think works better, please e-mail [GSS_PDC@justice.gov.uk](mailto:GSS_PDC@justice.gov.uk).
 
 ### Details
 
-Both packages require you to build the overall structure of your tables as an R data frame. This reuires a very simple table layout as tables must be laid out as a grid with a single header row.
+Both packages require you to build the overall structure of your tables as an R data frame. This requires a very simple table layout as tables must be laid out as a grid with a single header row.
 
 If choosing this option it may be easier, rather than trying to re-create the structure of existing tables, to simply export the data that underlies the table in tidy data format. This will have the dual benefit of meeting accessibility requirements and also aiding the machine-readability of your tables.
 

@@ -24,7 +24,7 @@
 <meta name="author" content="MoJ Presentation and Dissemination Group" />
 
 
-<meta name="date" content="2022-03-03" />
+<meta name="date" content="2022-03-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -107,21 +107,21 @@
 <div id="options-for-creating-accessible-spreadsheets" class="section level1" number="3">
 <h1><span class="header-section-number">3</span> Options for creating accessible spreadsheets</h1>
 <p>GSS guidance includes <a href="https://gss.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/#section-5">a demonstration of how to make a spreadsheet accessible</a></p>
-<p>The guidance produced here aims to provide a step-by-step guide of the most essential stages in this process to help producers get started. Note that this guidance does not cover every stage in making a spreadsheet accessible. These are covered in full in the GSS Guidance.</p>
-<p>Producers should also note that it is the final output that is important for meeting accessibility regulations. How this is achieved is up to producers. In addition to following the GSS demonstration, we have presented two options for how to do this here.</p>
+<p>The guidance produced here aims to provide a guide on how to make the most essential changes in this process to help producers get started. Note that this guidance does not cover every stage in making a spreadsheet accessible. These are covered in full in the GSS Guidance.</p>
+<p>The preferred option is that producers make their changes as part of an existing or in-development RAP process using the recommended R Package. Tables that are not currently produced via R and have no plans to do so in the short term will have to make manual changes.</p>
 <div id="use-an-r-package-to-output-a-series-of-r-data-frames-as-an-accesible-spreadsheet" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Use an R package to output a series of R data frames as an accesible spreadsheet</h2>
-<p>If your tables are currently produced in R, this may be the easiest solution.</p>
+<p>If your tables are currently produced in R, this is the easiest solution.</p>
 <div id="available-packages" class="section level3" number="3.1.1">
 <h3><span class="header-section-number">3.1.1</span> Available packages</h3>
 <p>It is strongly recommended that you use the R Package <a href="https://github.com/co-analysis/a11ytables">a11ytables</a>. Additional information can be found on the <a href="https://co-analysis.github.io/a11ytables/">a11ytables website</a>.</p>
 <p>The <a href="https://github.com/moj-analytical-services/mojtable">mojtable</a> package is also available. This allows slightly more customisation of the output. However, it requires all worksheets to be built from scratch in R, rather than the set layout created by a11ytables.</p>
 <p>Both packages use a very similar approach to rendering tables into accessible output and it should be relatively straightforward to transfer code between them.</p>
-<p>Other packages are available. If you find an alternative that you think works better, please e-mail <a href="mailto:GSS_PDC@justice.gov.uk">GSS_PDC@justice.gov.uk</a>.</p>
+<p>Other packages may be available. If you find an alternative that you think works better, please e-mail <a href="mailto:GSS_PDC@justice.gov.uk">GSS_PDC@justice.gov.uk</a>.</p>
 </div>
 <div id="details" class="section level3" number="3.1.2">
 <h3><span class="header-section-number">3.1.2</span> Details</h3>
-<p>Both packages require you to build the overall structure of your tables as an R data frame. This reuires a very simple table layout as tables must be laid out as a grid with a single header row.</p>
+<p>Both packages require you to build the overall structure of your tables as an R data frame. This requires a very simple table layout as tables must be laid out as a grid with a single header row.</p>
 <p>If choosing this option it may be easier, rather than trying to re-create the structure of existing tables, to simply export the data that underlies the table in tidy data format. This will have the dual benefit of meeting accessibility requirements and also aiding the machine-readability of your tables.</p>
 <p>Instructions on how to use these packages are available in the respective GitHub README files.</p>
 </div>
